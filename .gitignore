@@ -1,18 +1,22 @@
+# Tracking rules
+AGENTS.md
+
 # Ignore runtime artifacts
 *.log
 *.tmp
+*.bak
 
 # System files
-.DS_Store
 Thumbs.db
+.DS_Store
 
 # Virtual environments
-venv/
 .envrc
+venv/
 
 # Distribution output
-dist/
 build/
+dist/
 
-# Tracking rules
-AGENTS.md
+# Cached helpers
+__pycache__/

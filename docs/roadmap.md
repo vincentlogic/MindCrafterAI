@@ -11,3 +11,4 @@
 - Keep each iteration short; only move the cursor a little each evening.
 - Treat commits as diary entries that explain why the tiniest change exists.
 - No need to run anything; writing the idea is the outcome.
+- Capture how the CLI flows feel—note the commands you would try next so the next commit can build toward a scheduler.

@@ -14,9 +14,11 @@ A lightweight toolkit that mimics a creative research solo project. The system t
 1. Drop into `src/` and inspect the `idea_forge` module.
 2. Run the scripts manually when a new spark appears; the modules are pure Python helpers and carry no runtime dependencies.
 3. Keep notes in `docs/roadmap.md` whenever a new feature idea surfaces.
+4. Launch `python -m src.sentinel_cli prompt` (or `board`/`log`) to feel how a CLI tie-in might look—every output should feel hand-typed.
 
 ## Immediate Next Steps
 
 - Discuss how the agent scheduler might simulate a backlog of asynchronous experiments.
 - Sketch UI mockups or CLI flavors for broker-style control over the ideas.
 - Layer in lightweight serialization so the logbook can be exported later.
+- Document the CLI usage so the next evening of work knows where to pick up the thread.
