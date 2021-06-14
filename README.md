@@ -8,6 +8,7 @@ A lightweight toolkit that mimics a creative research solo project. The system t
 - **Agent Logbook**: a structured tracker for the mock agents, including their mood, intent, and preferred tools.
 - **Signal Board**: a human-readable summary built for quick status checks and inspiration throws.
 - **Ops Notes**: metadata about planned iterations and tooling decisions, leaning on a pseudo pipeline rhythm.
+- **Storage Trough**: simple JSON helpers that keep each CLI session from vanishing so the mock notebook feels more permanent.
 
 ## Getting Started
 
@@ -15,6 +16,7 @@ A lightweight toolkit that mimics a creative research solo project. The system t
 2. Run the scripts manually when a new spark appears; the modules are pure Python helpers and carry no runtime dependencies.
 3. Keep notes in `docs/roadmap.md` whenever a new feature idea surfaces.
 4. Launch `python -m src.sentinel_cli prompt` (or `board`/`log`) to feel how a CLI tie-in might look—every output should feel hand-typed.
+5. Inspect `data/agent_journal.json` after running `log` to see how entries persist across the mock evenings without needing a real backend.
 
 ## Immediate Next Steps
 

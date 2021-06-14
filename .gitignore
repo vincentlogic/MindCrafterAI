@@ -18,5 +18,8 @@ venv/
 build/
 dist/
 
+# Lightweight data
+data/
+
 # Cached helpers
 __pycache__/
