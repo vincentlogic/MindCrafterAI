@@ -24,3 +24,4 @@ A lightweight toolkit that mimics a creative research solo project. The system t
 - Sketch UI mockups or CLI flavors for broker-style control over the ideas.
 - Layer in lightweight serialization so the logbook can be exported later.
 - Document the CLI usage so the next evening of work knows where to pick up the thread.
+- Refer to `docs/cli_usage.md` before the next commit to remind yourself which commands feel natural in this solo workflow.
