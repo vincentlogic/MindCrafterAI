@@ -7,6 +7,7 @@ from typing import List
 
 from src.idea_forge import IdeaForge
 from src.logbook import AgentEntry, record_entry
+from src.persistence import dump_entries, load_entries
 
 
 class SignalBoard:
@@ -55,8 +56,11 @@ def main(argv: List[str] = None) -> None:
     args = parser.parse_args(argv)
 
     forge = IdeaForge()
-    entries: List[AgentEntry] = []
+    entries: List[AgentEntry] = load_entries()
     board = SignalBoard()
+
+    for entry in entries:
+        board.add_entry(entry)
 
     if args.command == "prompt":
         for _ in range(args.count):
@@ -65,6 +69,7 @@ def main(argv: List[str] = None) -> None:
     elif args.command == "log":
         entry = record_entry(entries, args.name, args.focus, args.mood)
         board.add_entry(entry)
+        dump_entries(entries)
         print(textwrap.fill(entry.focus, width=60))
     elif args.command == "board":
         print(board.snapshot(limit=args.limit))

@@ -17,6 +17,7 @@ A lightweight toolkit that mimics a creative research solo project. The system t
 3. Keep notes in `docs/roadmap.md` whenever a new feature idea surfaces.
 4. Launch `python -m src.sentinel_cli prompt` (or `board`/`log`) to feel how a CLI tie-in might look—every output should feel hand-typed.
 5. Inspect `data/agent_journal.json` after running `log` to see how entries persist across the mock evenings without needing a real backend.
+6. After a log, rerun `python -m src.sentinel_cli board` to confirm that the snapshot pulls from the JSON journal you just wrote.
 
 ## Immediate Next Steps
 
