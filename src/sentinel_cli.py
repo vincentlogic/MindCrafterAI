@@ -8,6 +8,7 @@ from typing import List
 from src.idea_forge import IdeaForge
 from src.logbook import AgentEntry, record_entry
 from src.persistence import dump_entries, load_entries
+from src.sample_agents import load_sample_agents
 
 
 class SignalBoard:
@@ -48,6 +49,9 @@ def build_parser() -> argparse.ArgumentParser:
     board = subparsers.add_parser("board", help="render the signal board summary")
     board.add_argument("--limit", type=int, default=4, help="how many entries to show")
 
+    agents = subparsers.add_parser("agents", help="view the sample agent roster")
+    agents.add_argument("--details", action="store_true", help="show each agent's focus and mood")
+
     return parser
 
 
@@ -73,3 +77,10 @@ def main(argv: List[str] = None) -> None:
         print(textwrap.fill(entry.focus, width=60))
     elif args.command == "board":
         print(board.snapshot(limit=args.limit))
+    elif args.command == "agents":
+        roster = load_sample_agents()
+        for agent in roster:
+            if args.details:
+                print(f\"{agent.name}: {agent.focus} [{agent.mood}]\")
+            else:
+                print(agent.name)

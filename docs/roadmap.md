@@ -15,3 +15,4 @@
 - Track how the JSON journal feels after each log command so the next session can build around importing or syncing that file.
 - Keep `docs/cli_usage.md` in hand; each evening compare the actual command with the written notes so the log stays believable.
 - Make sure the `board` snapshot is in sync with the journal after each log so it truly reads like a continuation of the same evening’s work.
+- Reference the sample roster when writing logs so the new command feels like the way the solo developer remembers the agents.
