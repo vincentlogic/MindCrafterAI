@@ -16,3 +16,4 @@
 - Keep `docs/cli_usage.md` in hand; each evening compare the actual command with the written notes so the log stays believable.
 - Make sure the `board` snapshot is in sync with the journal after each log so it truly reads like a continuation of the same evening’s work.
 - Reference the sample roster when writing logs so the new command feels like the way the solo developer remembers the agents.
+- Sketch how `src/summary.tally_mood_counts` and `latest_focus` could drive the next version of the signal board or a visualization.
