@@ -17,3 +17,4 @@
 - Make sure the `board` snapshot is in sync with the journal after each log so it truly reads like a continuation of the same evening’s work.
 - Reference the sample roster when writing logs so the new command feels like the way the solo developer remembers the agents.
 - Sketch how `src/summary.tally_mood_counts` and `latest_focus` could drive the next version of the signal board or a visualization.
+- Keep those summary tests handy so the next commit can tweak the functions without guessing if the counts changed.
