@@ -6,6 +6,7 @@ Commands are meant to feel handwritten each evening. Use the following as prompt
 - `python -m src.sentinel_cli log Aurora "corydalis field research" playful` writes an entry and echoes the focus.
 - `python -m src.sentinel_cli board --limit 3` renders the latest moods along with their timestamps.
 - `python -m src.sentinel_cli agents --details` lists the sample roster and the focus/mood pairings to keep the project grounded.
+- `python -m src.sentinel_cli notes --brief` quickly remembers what the ops notes were after each mini-iteration.
 
 After running a `log` command, check `data/agent_journal.json` to see how each entry stacks up; this file is the fake persistence layer for the mock journal.
 

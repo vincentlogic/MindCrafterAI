@@ -7,6 +7,7 @@ from typing import List
 
 from src.idea_forge import IdeaForge
 from src.logbook import AgentEntry, record_entry
+from src.ops_notes import OPS_NOTES
 from src.persistence import dump_entries, load_entries
 from src.sample_agents import load_sample_agents
 
@@ -52,6 +53,9 @@ def build_parser() -> argparse.ArgumentParser:
     agents = subparsers.add_parser("agents", help="view the sample agent roster")
     agents.add_argument("--details", action="store_true", help="show each agent's focus and mood")
 
+    notes = subparsers.add_parser("notes", help="read the ops notes and tiny wins")
+    notes.add_argument("--brief", action="store_true", help="list each note on one line")
+
     return parser
 
 
@@ -81,6 +85,12 @@ def main(argv: List[str] = None) -> None:
         roster = load_sample_agents()
         for agent in roster:
             if args.details:
-                print(f\"{agent.name}: {agent.focus} [{agent.mood}]\")
+                print(f"{agent.name}: {agent.focus} [{agent.mood}]")
             else:
                 print(agent.name)
+    elif args.command == "notes":
+        for note in OPS_NOTES:
+            if args.brief:
+                print(f"{note.date} | {note.tactic}")
+            else:
+                print(f"{note.date} | {note.tactic} -> {note.outcome}")

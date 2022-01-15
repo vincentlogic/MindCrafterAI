@@ -19,3 +19,4 @@
 - Sketch how `src/summary.tally_mood_counts` and `latest_focus` could drive the next version of the signal board or a visualization.
 - Keep those summary tests handy so the next commit can tweak the functions without guessing if the counts changed.
 - Use `src.ops_notes.OPS_NOTES` as the chronicle of what was actually done—each future entry should be a short note like these.
+- Make `notes` command part of your review ritual so the CLI always echoes those prior tactics and outcomes.

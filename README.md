@@ -27,3 +27,4 @@ A lightweight toolkit that mimics a creative research solo project. The system t
 - Document the CLI usage so the next evening of work knows where to pick up the thread.
 - Refer to `docs/cli_usage.md` before the next commit to remind yourself which commands feel natural in this solo workflow.
 - Rotate through `python -m src.sentinel_cli agents` when you need fresh logbook handles so the roster feels handcrafted.
+- Revisit `python -m src.sentinel_cli notes` to keep the ops notes alive and remind the next evening why the previous tweaks landed.
